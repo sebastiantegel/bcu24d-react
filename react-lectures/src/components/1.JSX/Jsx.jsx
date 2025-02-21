@@ -52,9 +52,9 @@ const Jsx = () => {
         {/* Display elements through looping an array */}
         {elements}
         {
-        elements.map( e => {
-            return <p>{e}</p>
-        } )
+          elements.map( e => {
+              return <p>{e}</p>
+          } )
         }
     </>
   )
