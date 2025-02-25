@@ -7,6 +7,7 @@ import GreetingsComponent from './components/2.ComponentsAndProps/GreetingsCompo
 import PackList from './components/3.ConditionalRendering/PackList';
 import ClickEvent from './components/4.Eventhandler/ClickEvent';
 import UseStateExample from './components/5.UseStateHook/UseStateExample';
+import Blog from './components/6.ListsAndKeys/Blog';
 
   {/* Object belongs to lecture "2. Components and Props" */}
   const comment = {
@@ -22,8 +23,11 @@ function App() {
   // Java script section
   return (
     <>
+      {/*  Rendering Lists */}
+      <Blog />
+
       {/* 5. State Hooks */}
-      <UseStateExample />
+      {/* <UseStateExample /> */}
 
       {/* 4. Eventhandler */}
       {/* <ClickEvent /> */}
