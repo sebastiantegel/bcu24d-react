@@ -43,5 +43,6 @@ contract personsContract {
 
     constructor() {
         createPerson("Sebastian", 45, true);
+        createPerson("Hanna", 44, true);
     }
 }
