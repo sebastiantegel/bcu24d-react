@@ -17,6 +17,7 @@ header {
   display: grid;
   place-items: center;
   padding-right: 1rem;
+  flex-shrink: 0;
 }
 
 main {
@@ -28,6 +29,7 @@ main {
 
 footer {
   height: 200px;
+  flex-shrink: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
