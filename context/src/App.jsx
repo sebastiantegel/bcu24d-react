@@ -12,15 +12,20 @@ function App() {
     setPersons([...persons, new Person(user.name, user.age)]);
   };
 
-  // value = {persons, addPerson}
+  const removePerson = (id) => {
+    setPersons(persons.filter((p) => p.id !== id));
+  };
+
+  // value = {persons, addPerson, removePerson}
   // value = {
   //   persons: persons,
   //   addPerson: addPerson
+  //   removePerson: removePerson
   // }
 
   return (
     <>
-      <PersonContext.Provider value={{ persons, addPerson }}>
+      <PersonContext.Provider value={{ persons, addPerson, removePerson }}>
         <AddPerson />
         <Persons />
       </PersonContext.Provider>
